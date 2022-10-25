@@ -19,6 +19,7 @@ const Header = () => {
                         navbarScroll
                     >
                         <Link className='me-5 text-decoration-none title' to='/'>Home</Link>
+                        <Link className='me-5 text-decoration-none title' to='/faq'>FAQ</Link>
                         <Link className='me-5 text-decoration-none title' to='/blog'>Blog</Link>
                         <Link className='me-5 text-decoration-none title' to='/login'>Login</Link>
                         <Link className='me-5 text-decoration-none title' to='/register'>Register</Link>

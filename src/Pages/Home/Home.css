@@ -1,0 +1,15 @@
+.hero-content h2 {
+    font-weight: 600;
+    line-height: 55px;
+}
+.hero-content {
+    padding-top: 80px;
+}
+/* .img{
+    width: 400px;
+    height: 400px;
+} */
+.hero-img{
+    border-radius: 10px;
+    margin-top: 40px;
+}

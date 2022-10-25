@@ -6,7 +6,7 @@ const ErrorPage = () => {
     return (
         <section className="flex align-items-center mx-auto justify-content-center error">
             <div className="d-flex align-items-center justify-content-center vh-100">
-                <div className="text-center container">
+                <div className="text-center text-info">
                     <h1 className="display-1 fw-bold text-danger">404</h1>
                     <p className="fs-3"> <span className="text-danger">Opps!</span> Page not found.</p>
                     <p className="lead">

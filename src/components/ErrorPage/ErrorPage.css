@@ -1,0 +1,13 @@
+.container{
+    border: 1px solid gray;
+    width: 350px !important;
+    height: 300px !important;
+    border-radius: 8px;
+    /* background-color: gray; */
+}
+.btn-primary{
+    background-color: #309255 !important;
+    border: none !important;
+    padding: 10px 30px !important;
+    font-weight: 700 !important;
+}

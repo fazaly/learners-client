@@ -48,7 +48,7 @@ input{
     text-align: center;
     width:100%;
     display:block;
-    margin-bottom:40px;
+    margin-bottom:5px;
 }
 .user:hover{
     color:#00b665;
@@ -100,11 +100,14 @@ input{
     display:flex;
     flex-wrap:wrap;
 }
+.forget{
+    color: gray;
+}
 .p-t-50{padding-top: 50px;}
 .p-b-90{padding-bottom: 90px;}
 .p-l-50{padding-left: 50px;}
 .p-r-50{padding-right:50px;}
-.m-t-17{margin-top:17px;}
+.m-t-17{margin-top:5px;}
 .m-b-16{margin-bottom:16px;}
 .w-full{
     width:100%;

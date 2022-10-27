@@ -30,22 +30,22 @@ export const routes = createBrowserRouter([
             {
                 path: ('/category/:id'),
                 element: <Category></Category>,
-                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({params}) => fetch(`https://b610-learning-platform-server-side-fazaly-fazaly.vercel.app/category/${params.id}`)
             },
             {
                 path: ('/courses/:id'),
                 element:<Courses></Courses>,
-                loader: ({params}) => fetch(`http://localhost:5000/courses/${params.id}`)
+                loader: ({params}) => fetch(`https://b610-learning-platform-server-side-fazaly-fazaly.vercel.app/courses/${params.id}`)
             },
             {
                 path: ('/course'),
                 element: <CourseInitial></CourseInitial>,
-                loader: () => fetch('http://localhost:5000/courses'),
+                loader: () => fetch('https://b610-learning-platform-server-side-fazaly-fazaly.vercel.app/courses'),
             },
             {
                 path: '/checkout/:id',
                 element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({params}) => fetch(`https://b610-learning-platform-server-side-fazaly-fazaly.vercel.app/category/${params.id}`)
                 
             },
             {

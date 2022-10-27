@@ -44,7 +44,7 @@ const Header = () => {
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
                         className="justify-content-end align-items-center flex-grow-1 pe-3"
-                        style={{ maxHeight: '100px' }}
+                        style={{ maxHeight: '500px' }}
                         navbarScroll
                     >
                         <Link className='me-5 text-decoration-none title' to='/'>Home</Link>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,8 +9,24 @@ import { useContext } from 'react';
 import { AuthContext } from '../../../context/AuthProvider';
 
 const Header = () => {
-
     const {user, logOut} = useContext(AuthContext);
+
+    const [theme, setTheme] = useState(
+        localStorage.getItem('theme') || 'light'
+    );
+
+    const toggleTheme = () => {
+        if (theme === 'light') {
+            setTheme('dark');
+            } 
+            else {
+            setTheme('light');
+            }
+        };
+        useEffect(() => {
+            localStorage.setItem('theme', theme);
+            document.body.className = theme;
+        }, [theme]);
 
     const handleLogOut = () => {
         logOut()
@@ -47,6 +63,9 @@ const Header = () => {
                                 </>
                             }
                         </>
+                        <div className={`App ${theme}`}>
+                            <button className='toggle' onClick={toggleTheme}>Toggle Theme</button>
+                        </div>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

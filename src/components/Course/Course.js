@@ -9,7 +9,7 @@ const Course = () => {
             <div>
                 {
                     allCourses.map(course => <CourseDetails
-                    key = {course.id}
+                    key = {course._id}
                     course = {course}
                     ></CourseDetails>)
                 }

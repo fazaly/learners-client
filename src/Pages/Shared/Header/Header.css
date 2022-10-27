@@ -1,5 +1,5 @@
 .header{
-    background-color: #EEFBF3;
+    /* background-color: #EEFBF3; */
     border-bottom: 1px solid #78909C;
 }
 .title{
@@ -7,4 +7,19 @@
 }
 .title:hover{
     color: gray;
+}
+
+/* Toggle Theme */ 
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+.light {
+    background-color: #fff;
+    color: #333;
+}
+.toggle{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
 }

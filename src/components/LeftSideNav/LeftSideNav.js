@@ -13,7 +13,7 @@ const LeftSideNav = () => {
 
     return (
         <div className='shadow p-4 rounded-3 text-center'>
-            <h2 className='bg-info rounded-3 p-2 text-white'>All Courses</h2>
+            <h2 className='bg-info rounded-3 p-2'>All Courses</h2>
             <div className='category-design'>
                 {
                         categories.map(category => <p key = {category.id}>

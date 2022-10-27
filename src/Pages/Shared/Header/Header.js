@@ -11,6 +11,7 @@ import { AuthContext } from '../../../context/AuthProvider';
 const Header = () => {
     const {user, logOut} = useContext(AuthContext);
 
+    // Toggle for dark & light theme
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') || 'light'
     );
@@ -28,6 +29,7 @@ const Header = () => {
             document.body.className = theme;
         }, [theme]);
 
+    // handle log out button
     const handleLogOut = () => {
         logOut()
         .then( () => {})
@@ -64,7 +66,7 @@ const Header = () => {
                             }
                         </>
                         <div className={`App ${theme}`}>
-                            <button className='toggle' onClick={toggleTheme}>Toggle Theme</button>
+                            <button className='toggle' onClick={toggleTheme}>Theme</button>
                         </div>
                     </Nav>
                 </Navbar.Collapse>

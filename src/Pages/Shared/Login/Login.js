@@ -1,12 +1,16 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { FaGithub, FaGoogle, FaRegUser, FaTwitter } from "react-icons/fa";
 import './Login.css';
 import { useContext } from 'react';
 import { AuthContext } from '../../../context/AuthProvider';
 
 const Login = () => {
+
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
+    const navigate = useNavigate();
 
     const {signIn, signInWithGoogle, signInWithGithub} = useContext(AuthContext);
 
@@ -24,6 +28,7 @@ const Login = () => {
             const user = result.user;
             console.log(user);
             form.reset();
+            navigate(from, {replace: true})
         })
         .catch( error => {
             console.error(error);

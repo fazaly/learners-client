@@ -8,13 +8,10 @@ const Category = () => {
 
     return (
         <div>
-            <h2>Categoty has courses : {courses.length}</h2>
             {
                 courses.map(course => <CourseDetails
-                
                     key = {course._id}
                     course = {course}
-                
                 ></CourseDetails>)
             }
         </div>
